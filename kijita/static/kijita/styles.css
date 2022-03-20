@@ -1,0 +1,12 @@
+#text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6mm;
+    line-height: 1cm;
+    text-align: center;
+}
+
+.heading{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 1cm;
+}

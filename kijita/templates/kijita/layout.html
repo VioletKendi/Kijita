@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar sticky-top navbar navbar-expand-lg navbar navbar-dark bg-dark" style="padding: 5mm; border-bottom-left-radius: 2.5mm; border-bottom-right-radius: 2.5mm;" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="font-family: 'Times New Roman', Times, serif;"><script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/wxnxiano.json"
+                    trigger="morph"
+                    colors="primary:#ffffff,secondary:#794628"
+                    style="width:30;height:30">
+                </lord-icon>KIJITA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 4cm; margin-left: 0cm;">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 10cm;">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <nav class="navbar navbar-light bg-dark">
+                    <form class="container-fluid justify-content-start">
+                      <button class="btn btn-primary" type="button" style="margin-right: 5mm;">Sign Up</button>
+                      <button class="btn btn-outline-light" type="button">Log In</button>
+                    </form>
+                  </nav>
+              </div>
+            </div>
+        </nav>
+    </div>
+    
+    {%block body%}
+    {%endblock%}
+
+    <footer>
+        <hr>
+          <p style="text-align: center;">© 2022 Kijita.co</p>
+    </footer>
+</body>
+</html>
