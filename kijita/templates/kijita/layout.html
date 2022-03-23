@@ -11,9 +11,9 @@
 </head>
 <body>
     <div id="header">
-        <nav class="navbar sticky-top navbar navbar-expand-lg navbar navbar-dark bg-dark" style="padding: 5mm; border-bottom-left-radius: 2.5mm; border-bottom-right-radius: 2.5mm;" >
+        <nav class="navbar sticky-top navbar navbar-expand-lg navbar navbar-dark bg-dark" style="padding: 2mm; border-bottom-left-radius: 2.5mm; border-bottom-right-radius: 2.5mm;" >
             <div class="container-fluid">
-              <a class="navbar-brand" href="#" style="font-family: 'Times New Roman', Times, serif;"><script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+              <a class="navbar-brand" href="{% url 'index' %}" style="font-family: 'Times New Roman', Times, serif;"><script src="https://cdn.lordicon.com/lusqsztk.js"></script>
                 <lord-icon
                     src="https://cdn.lordicon.com/wxnxiano.json"
                     trigger="morph"
@@ -26,7 +26,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
                   </li>
     
                   <li class="nav-item dropdown">
